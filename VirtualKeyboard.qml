@@ -8,43 +8,16 @@ Rectangle {
     // color: "lightgrey"
 
     property color btnColor: "aqua"
+    property string currentLang: "english"
     signal keyPressed(string key)
-    property bool capsLock: false
-
-    function refreshText() {
-        buttonRepeater1.update();
-        buttonRepeater2.update();
-        buttonRepeater3.update();
-        buttonRepeater4.update();
-        buttonRepeater5.update();
-        buttonRepeater6.update();
-    }
 
     Component.onCompleted: {
-        loadKeyboardData();
+        keyboardPlugin.loadKeyboardData(currentLang);
     }
 
-    function loadKeyboardData() {
-        var xhr = new XMLHttpRequest();
-        xhr.onreadystatechange = function() {
-            if (xhr.readyState === XMLHttpRequest.DONE) {
-                if (xhr.status === 200) {
-                    var response = xhr.responseText;
-                    var jsonData = JSON.parse(response);
-                    buttonRepeater1.model = jsonData.row1;
-                    buttonRepeater2.model = jsonData.row2;
-                    buttonRepeater3.model = jsonData.row3;
-                    buttonRepeater4.model = jsonData.row4;
-                    buttonRepeater5.model = jsonData.row5;
-                    buttonRepeater6.model = jsonData.row6;
-                } else {
-                    console.error("Failed to load keyboard data:", xhr.statusText);
-                }
-            }
-        }
-        // Load the JSON file from the qrc path
-        xhr.open("GET", "qrc:/keyboard_data.json");
-        xhr.send();
+    function changeLanguage(lang) {
+        currentLang = lang;
+        keyboardPlugin.loadKeyboardData(lang);
     }
 
     ColumnLayout {
@@ -59,8 +32,9 @@ Rectangle {
 
             Repeater {
                 id: buttonRepeater1
+                model: keyboardPlugin.row1
                 delegate: Button {
-                    text: modelData
+                    text: modelData.toString()
                     onClicked: keyboard.keyPressed(modelData)
                 }
             }
@@ -74,8 +48,9 @@ Rectangle {
 
             Repeater {
                 id: buttonRepeater2
+                model: keyboardPlugin.row2
                 delegate: Button {
-                    text: modelData
+                    text: modelData.toString()
                     onClicked: keyboard.keyPressed(modelData)
                 }
             }
@@ -89,8 +64,9 @@ Rectangle {
 
             Repeater {
                 id: buttonRepeater3
+                model: keyboardPlugin.row3
                 delegate: Button {
-                    text: modelData
+                    text: modelData.toString()
                     onClicked: keyboard.keyPressed(modelData)
                 }
             }
@@ -104,8 +80,9 @@ Rectangle {
 
             Repeater {
                 id: buttonRepeater4
+                model: keyboardPlugin.row4
                 delegate: Button {
-                    text: modelData
+                    text: modelData.toString()
                     onClicked: keyboard.keyPressed(modelData)
                 }
             }
@@ -119,10 +96,11 @@ Rectangle {
 
             Repeater {
                 id: buttonRepeater5
+                model: keyboardPlugin.row5
                 delegate: Button {
-                    text: modelData
+                    text: modelData.toString()
                     onClicked: {
-                        if (modelData === "\u2190") {
+                        if (text === "\u2190") {
                             if (inputField.text.length > 0) {
                                 inputField.text = inputField.text.substring(0, inputField.text.length - 1);
                             }
@@ -142,15 +120,18 @@ Rectangle {
 
             Repeater {
                 id: buttonRepeater6
+                model: keyboardPlugin.row6
                 delegate: Button {
-                    text: modelData
+                    text: modelData.toString()
                     onClicked: {
-                        if (modelData === "123") {
+                        if (text === "123") {
                             console.log("123 clicked");
-                        } else if (modelData === "Space") {
+                        } else if (text === "Space") {
                             keyboard.keyPressed(" ");
-                        } else if (modelData === "Enter") {
+                        } else if (text === "Enter") {
                             inputField.text += "\n";
+                        } else if (text === "Lang") {
+                            keyboard.changeLanguage(keyboard.currentLang === "english" ? "arabic" : "english");
                         } else {
                             keyboard.keyPressed("Enter");
                         }

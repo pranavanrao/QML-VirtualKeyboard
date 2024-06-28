@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/data"/>
     <qresource prefix="/">
-        <file>keyboard_data.json</file>
+        <file>keyboard_data_english.json</file>
+        <file>keyboard_data_arabic.json</file>
     </qresource>
 </RCC>
