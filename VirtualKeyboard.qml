@@ -1,34 +1,50 @@
 import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
+import Qt.labs.platform 1.1
 
 Rectangle {
     id: keyboard
     // color: "lightgrey"
 
     property color btnColor: "aqua"
-
     signal keyPressed(string key)
-
     property bool capsLock: false
 
     function refreshText() {
-        for (var i = 0; i < buttonRepeater1.count; i++) {
-            var item = buttonRepeater1.itemAt(i);
-            if (item) item.text = capsLock ? item.modelData.toUpperCase() : item.modelData.toLowerCase();
+        buttonRepeater1.update();
+        buttonRepeater2.update();
+        buttonRepeater3.update();
+        buttonRepeater4.update();
+        buttonRepeater5.update();
+        buttonRepeater6.update();
+    }
+
+    Component.onCompleted: {
+        loadKeyboardData();
+    }
+
+    function loadKeyboardData() {
+        var xhr = new XMLHttpRequest();
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState === XMLHttpRequest.DONE) {
+                if (xhr.status === 200) {
+                    var response = xhr.responseText;
+                    var jsonData = JSON.parse(response);
+                    buttonRepeater1.model = jsonData.row1;
+                    buttonRepeater2.model = jsonData.row2;
+                    buttonRepeater3.model = jsonData.row3;
+                    buttonRepeater4.model = jsonData.row4;
+                    buttonRepeater5.model = jsonData.row5;
+                    buttonRepeater6.model = jsonData.row6;
+                } else {
+                    console.error("Failed to load keyboard data:", xhr.statusText);
+                }
+            }
         }
-        for (var i = 0; i < buttonRepeater2.count; i++) {
-            var item = buttonRepeater2.itemAt(i);
-            if (item) item.text = capsLock ? item.modelData.toUpperCase() : item.modelData.toLowerCase();
-        }
-        for (var i = 0; i < buttonRepeater3.count; i++) {
-            var item = buttonRepeater3.itemAt(i);
-            if (item) item.text = capsLock ? item.modelData.toUpperCase() : item.modelData.toLowerCase();
-        }
-        for (var i = 0; i < buttonRepeater4.count; i++) {
-            var item = buttonRepeater4.itemAt(i);
-            if (item) item.text = capsLock ? item.modelData.toUpperCase() : item.modelData.toLowerCase();
-        }
+        // Load the JSON file from the qrc path
+        xhr.open("GET", "qrc:/keyboard_data.json");
+        xhr.send();
     }
 
     ColumnLayout {
@@ -36,86 +52,85 @@ Rectangle {
         width: parent.width
 
         RowLayout {
+            id: row1Layout
             spacing: 2
             width: parent.width
             Layout.alignment: Qt.AlignHCenter
 
             Repeater {
                 id: buttonRepeater1
-                model: ["-", ".", ",", ":", "&", "%", "'", "(", ")", "+"]
-
-                Button {
+                delegate: Button {
                     text: keyboard.capsLock ? modelData.toUpperCase() : modelData.toLowerCase()
-                    onClicked: keyboard.keyPressed(text)
+                    onClicked: keyboard.keyPressed(modelData)
                 }
             }
         }
 
         RowLayout {
+            id: row2Layout
             spacing: 2
             width: parent.width
             Layout.alignment: Qt.AlignHCenter
 
             Repeater {
                 id: buttonRepeater2
-                model: ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
-
-                Button {
+                delegate: Button {
                     text: modelData
-                    onClicked: keyboard.keyPressed(text)
+                    onClicked: keyboard.keyPressed(modelData)
                 }
             }
         }
 
         RowLayout {
+            id: row3Layout
             spacing: 2
             width: parent.width
             Layout.alignment: Qt.AlignHCenter
 
             Repeater {
                 id: buttonRepeater3
-                model: ["Q","W","E","R","T","Y","U","I","O","P"]
-
-                Button {
+                delegate: Button {
                     text: keyboard.capsLock ? modelData.toUpperCase() : modelData.toLowerCase()
-                    onClicked: keyboard.keyPressed(text)
+                    onClicked: keyboard.keyPressed(modelData)
                 }
             }
         }
 
         RowLayout {
+            id: row4Layout
             spacing: 2
             width: parent.width
             Layout.alignment: Qt.AlignHCenter
 
             Repeater {
                 id: buttonRepeater4
-                model: ["A","S","D","F","G","H","J","K","L"]
-
-                Button {
+                delegate: Button {
                     text: keyboard.capsLock ? modelData.toUpperCase() : modelData.toLowerCase()
-                    onClicked: keyboard.keyPressed(text)
+                    onClicked: keyboard.keyPressed(modelData)
                 }
             }
         }
 
         RowLayout {
+            id: row5Layout
             spacing: 2
             width: parent.width
             Layout.alignment: Qt.AlignHCenter
 
             Repeater {
                 id: buttonRepeater5
-                model: ["Caps","Z","X","C","V","B","N","M","<-"]
-
-                Button {
+                delegate: Button {
                     text: modelData
                     onClicked: {
                         if (modelData === "Caps") {
-                            keyboard.capsLock = !keyboard.capsLock
-                            keyboard.refreshText()
+                            keyboard.capsLock = !keyboard.capsLock;
+                            keyboard.refreshText();
+                        } else if (modelData === "<-") {
+                            if (inputField.text.length > 0) {
+                                inputField.text = inputField.text.substring(0, inputField.text.length - 1);
+                            }
                         } else {
-                            keyboard.keyPressed(text)
+                            keyboard.keyPressed(modelData);
                         }
                     }
                 }
@@ -123,26 +138,25 @@ Rectangle {
         }
 
         RowLayout {
+            id: row6Layout
             spacing: 2
             width: parent.width
             Layout.alignment: Qt.AlignHCenter
 
-            Button {
-                text: "123"
-                onClicked: keyboard.keyPressed("123")
-            }
-
-            Button {
-                width: 50
-                text: "Space"
-                onClicked: keyboard.keyPressed("Space")
-            }
-
-            Button {
-                text: "Enter"
-                onClicked: {
-                    inputField.text += "\n"
-                    keyboard.keyPressed("Enter")
+            Repeater {
+                id: buttonRepeater6
+                delegate: Button {
+                    text: modelData
+                    onClicked: {
+                        if (modelData === "123") {
+                            // Handle numeric keyboard toggle if needed
+                        } else if (modelData === "Space") {
+                            keyboard.keyPressed(" ");
+                        } else if (modelData === "Enter") {
+                            inputField.text += "\n";
+                            keyboard.keyPressed("Enter");
+                        }
+                    }
                 }
             }
         }
