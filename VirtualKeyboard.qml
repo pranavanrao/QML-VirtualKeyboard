@@ -60,7 +60,7 @@ Rectangle {
             Repeater {
                 id: buttonRepeater1
                 delegate: Button {
-                    text: keyboard.capsLock ? modelData.toUpperCase() : modelData.toLowerCase()
+                    text: modelData
                     onClicked: keyboard.keyPressed(modelData)
                 }
             }
@@ -90,7 +90,7 @@ Rectangle {
             Repeater {
                 id: buttonRepeater3
                 delegate: Button {
-                    text: keyboard.capsLock ? modelData.toUpperCase() : modelData.toLowerCase()
+                    text: modelData
                     onClicked: keyboard.keyPressed(modelData)
                 }
             }
@@ -105,7 +105,7 @@ Rectangle {
             Repeater {
                 id: buttonRepeater4
                 delegate: Button {
-                    text: keyboard.capsLock ? modelData.toUpperCase() : modelData.toLowerCase()
+                    text: modelData
                     onClicked: keyboard.keyPressed(modelData)
                 }
             }
@@ -122,10 +122,7 @@ Rectangle {
                 delegate: Button {
                     text: modelData
                     onClicked: {
-                        if (modelData === "Caps") {
-                            keyboard.capsLock = !keyboard.capsLock;
-                            keyboard.refreshText();
-                        } else if (modelData === "<-") {
+                        if (modelData === "\u2190") {
                             if (inputField.text.length > 0) {
                                 inputField.text = inputField.text.substring(0, inputField.text.length - 1);
                             }
@@ -149,11 +146,12 @@ Rectangle {
                     text: modelData
                     onClicked: {
                         if (modelData === "123") {
-                            // Handle numeric keyboard toggle if needed
+                            console.log("123 clicked");
                         } else if (modelData === "Space") {
                             keyboard.keyPressed(" ");
                         } else if (modelData === "Enter") {
                             inputField.text += "\n";
+                        } else {
                             keyboard.keyPressed("Enter");
                         }
                     }

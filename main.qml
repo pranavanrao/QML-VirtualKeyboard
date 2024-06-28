@@ -18,26 +18,14 @@ Window {
             font.pointSize: 20
             focus: true
             padding: 20
-            color: "#FF00FF"
-
-            Keys.onReturnPressed: {
-                inputField.text += "\n"
-            }
+            color: "#000000"
         }
 
         VirtualKeyboard {
             width: 1200
             height: 200
             onKeyPressed: {
-                if (key === "Space") {
-                    inputField.text += " "
-                } else if (key === "Enter") {
-                    inputField.text += "\n"
-                } else if (key === "<-") {
-                    inputField.text = inputField.text.substring(0, inputField.text.length - 1)
-                } else {
-                    inputField.text += key
-                }
+                inputField.text += key
             }
         }
     }
