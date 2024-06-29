@@ -34,8 +34,8 @@ Rectangle {
                 id: buttonRepeater1
                 model: keyboardPlugin.row1
                 delegate: Button {
-                    text: modelData.toString()
-                    onClicked: keyboard.keyPressed(modelData)
+                    text: modelData.text
+                    onClicked: keyboard.keyPressed(modelData.text)
                 }
             }
         }
@@ -50,8 +50,8 @@ Rectangle {
                 id: buttonRepeater2
                 model: keyboardPlugin.row2
                 delegate: Button {
-                    text: modelData.toString()
-                    onClicked: keyboard.keyPressed(modelData)
+                    text: modelData.text
+                    onClicked: keyboard.keyPressed(modelData.text)
                 }
             }
         }
@@ -66,8 +66,8 @@ Rectangle {
                 id: buttonRepeater3
                 model: keyboardPlugin.row3
                 delegate: Button {
-                    text: modelData.toString()
-                    onClicked: keyboard.keyPressed(modelData)
+                    text: modelData.text
+                    onClicked: keyboard.keyPressed(modelData.text)
                 }
             }
         }
@@ -82,8 +82,8 @@ Rectangle {
                 id: buttonRepeater4
                 model: keyboardPlugin.row4
                 delegate: Button {
-                    text: modelData.toString()
-                    onClicked: keyboard.keyPressed(modelData)
+                    text: modelData.text
+                    onClicked: keyboard.keyPressed(modelData).text
                 }
             }
         }
@@ -98,14 +98,14 @@ Rectangle {
                 id: buttonRepeater5
                 model: keyboardPlugin.row5
                 delegate: Button {
-                    text: modelData.toString()
+                    text: modelData.text
                     onClicked: {
                         if (text === "\u2190") {
                             if (inputField.text.length > 0) {
                                 inputField.text = inputField.text.substring(0, inputField.text.length - 1);
                             }
                         } else {
-                            keyboard.keyPressed(modelData);
+                            keyboard.keyPressed(modelData.text);
                         }
                     }
                 }
@@ -122,7 +122,7 @@ Rectangle {
                 id: buttonRepeater6
                 model: keyboardPlugin.row6
                 delegate: Button {
-                    text: modelData.toString()
+                    text: modelData.text
                     onClicked: {
                         if (text === "123") {
                             console.log("123 clicked");
@@ -131,11 +131,54 @@ Rectangle {
                         } else if (text === "Enter") {
                             inputField.text += "\n";
                         } else if (text === "Lang") {
-                            keyboard.changeLanguage(keyboard.currentLang === "english" ? "arabic" : "english");
+                            langPopup.open();
                         } else {
                             keyboard.keyPressed("Enter");
                         }
                     }
+                }
+            }
+        }
+    }
+
+    Popup {
+        id: langPopup
+        width: 200
+        height: 200
+        modal: true
+        focus: true
+
+        Column {
+            spacing: 10
+            padding: 10
+            anchors.centerIn: parent
+
+            Button {
+                text: "English"
+                onClicked: {
+                    keyboard.changeLanguage("english");
+                    langPopup.close();
+                }
+            }
+            Button {
+                text: "Arabic"
+                onClicked: {
+                    keyboard.changeLanguage("arabic");
+                    langPopup.close();
+                }
+            }
+            Button {
+                text: "Japanese"
+                onClicked: {
+                    keyboard.changeLanguage("japanese");
+                    langPopup.close();
+                }
+            }
+            Button {
+                text: "German"
+                onClicked: {
+                    keyboard.changeLanguage("german");
+                    langPopup.close();
                 }
             }
         }

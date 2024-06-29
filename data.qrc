@@ -3,5 +3,8 @@
     <qresource prefix="/">
         <file>keyboard_data_english.json</file>
         <file>keyboard_data_arabic.json</file>
+        <file>keyboard_data_japanese.json</file>
+        <file>keyboard_data_german.json</file>
+        <file>languages_data.json</file>
     </qresource>
 </RCC>

@@ -1,0 +1,44 @@
+{
+    "row1": [
+        { "text": "あ", "key": "Qt.Key_A", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_あ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_あ" },
+        { "text": "い", "key": "Qt.Key_I", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_い", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_い" },
+        { "text": "う", "key": "Qt.Key_U", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_う", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_う" },
+        { "text": "え", "key": "Qt.Key_E", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_え", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_え" },
+        { "text": "お", "key": "Qt.Key_O", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_お", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_お" }
+    ],
+    "row2": [
+        { "text": "か", "key": "Qt.Key_KA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_か", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_か" },
+        { "text": "き", "key": "Qt.Key_KI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_き", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_き" },
+        { "text": "く", "key": "Qt.Key_KU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_く", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_く" },
+        { "text": "け", "key": "Qt.Key_KE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_け", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_け" },
+        { "text": "こ", "key": "Qt.Key_KO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_こ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_こ" }
+    ],
+    "row3": [
+        { "text": "さ", "key": "Qt.Key_SA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_さ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_さ" },
+        { "text": "し", "key": "Qt.Key_SHI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_し", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_し" },
+        { "text": "す", "key": "Qt.Key_SU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_す", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_す" },
+        { "text": "せ", "key": "Qt.Key_SE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_せ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_せ" },
+        { "text": "そ", "key": "Qt.Key_SO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_そ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_そ" }
+    ],
+    "row4": [
+        { "text": "た", "key": "Qt.Key_TA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_た", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_た" },
+        { "text": "ち", "key": "Qt.Key_CHI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_ち", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_ち" },
+        { "text": "つ", "key": "Qt.Key_TSU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_つ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_つ" },
+        { "text": "て", "key": "Qt.Key_TE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_て", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_て" },
+        { "text": "と", "key": "Qt.Key_TO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_と", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_と" }
+    ],
+    "row5": [
+        { "text": "な", "key": "Qt.Key_NA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_な", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_な" },
+        { "text": "に", "key": "Qt.Key_NI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_に", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_に" },
+        { "text": "ぬ", "key": "Qt.Key_NU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_ぬ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_ぬ" },
+        { "text": "ね", "key": "Qt.Key_NE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_ね", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_ね" },
+        { "text": "の", "key": "Qt.Key_NO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_の", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_の" },
+        { "text": "\u2190", "key": "Qt.Key_Backspace" }
+    ],
+    "row6": [
+        { "text": "123", "key": "Qt.Key_1" },
+        { "text": "Space", "key": "Qt.Key_Space" },
+        { "text": "Enter", "key": "Qt.Key_Return" },
+        { "text": "Lang", "key": "Qt.Key_Language" }
+    ]
+}

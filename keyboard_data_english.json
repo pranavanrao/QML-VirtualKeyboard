@@ -1,65 +1,195 @@
 {
     "row1": [
-        "-",
-        ".",
-        ",",
-        ":",
-        "&",
-        "%",
-        "'",
-        "(",
-        ")",
-        "+"
+        { "text": "-", "key": "Qt.Key_Minus" },
+        { "text": ".", "key": "Qt.Key_Period" },
+        { "text": ",", "key": "Qt.Key_Comma" },
+        { "text": ":", "key": "Qt.Key_Colon" },
+        { "text": "&", "key": "Qt.Key_Ampersand" },
+        { "text": "%", "key": "Qt.Key_Percent" },
+        { "text": "'", "key": "Qt.Key_Apostrophe" },
+        { "text": "(", "key": "Qt.Key_ParenLeft" },
+        { "text": ")", "key": "Qt.Key_ParenRight" },
+        { "text": "+", "key": "Qt.Key_Plus" }
     ],
     "row2": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5",
-        "6",
-        "7",
-        "8",
-        "9",
-        "0"
+        { "text": "1", "key": "Qt.Key_1" },
+        { "text": "2", "key": "Qt.Key_2" },
+        { "text": "3", "key": "Qt.Key_3" },
+        { "text": "4", "key": "Qt.Key_4" },
+        { "text": "5", "key": "Qt.Key_5" },
+        { "text": "6", "key": "Qt.Key_6" },
+        { "text": "7", "key": "Qt.Key_7" },
+        { "text": "8", "key": "Qt.Key_8" },
+        { "text": "9", "key": "Qt.Key_9" },
+        { "text": "0", "key": "Qt.Key_0" }
     ],
     "row3": [
-        "q",
-        "w",
-        "e",
-        "r",
-        "t",
-        "y",
-        "u",
-        "i",
-        "o",
-        "p"
+        {
+            "text": "q",
+            "key": "Qt.Key_Q",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_Q",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_q"
+        },
+        {
+            "text": "w",
+            "key": "Qt.Key_W",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_W",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_w"
+        },
+        {
+            "text": "e",
+            "key": "Qt.Key_E",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_E",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_e"
+        },
+        {
+            "text": "r",
+            "key": "Qt.Key_R",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_R",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_r"
+        },
+        {
+            "text": "t",
+            "key": "Qt.Key_T",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_T",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_t"
+        },
+        {
+            "text": "y",
+            "key": "Qt.Key_Y",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_Y",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_y"
+        },
+        {
+            "text": "u",
+            "key": "Qt.Key_U",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_U",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_u"
+        },
+        {
+            "text": "i",
+            "key": "Qt.Key_I",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_I",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_i"
+        },
+        {
+            "text": "o",
+            "key": "Qt.Key_O",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_O",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_o"
+        },
+        {
+            "text": "p",
+            "key": "Qt.Key_P",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_P",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_p"
+        }
     ],
     "row4": [
-        "a",
-        "s",
-        "d",
-        "f",
-        "g",
-        "h",
-        "j",
-        "k",
-        "l"
+        {
+            "text": "a",
+            "key": "Qt.Key_A",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_A",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_a"
+        },
+        {
+            "text": "s",
+            "key": "Qt.Key_S",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_S",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_s"
+        },
+        {
+            "text": "d",
+            "key": "Qt.Key_D",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_D",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_d"
+        },
+        {
+            "text": "f",
+            "key": "Qt.Key_F",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_F",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_f"
+        },
+        {
+            "text": "g",
+            "key": "Qt.Key_G",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_G",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_g"
+        },
+        {
+            "text": "h",
+            "key": "Qt.Key_H",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_H",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_h"
+        },
+        {
+            "text": "j",
+            "key": "Qt.Key_J",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_J",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_j"
+        },
+        {
+            "text": "k",
+            "key": "Qt.Key_K",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_K",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_k"
+        },
+        {
+            "text": "l",
+            "key": "Qt.Key_L",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_L",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_l"
+        }
     ],
     "row5": [
-        "z",
-        "x",
-        "c",
-        "v",
-        "b",
-        "n",
-        "m",
-        "\u2190"
+        {
+            "text": "z",
+            "key": "Qt.Key_Z",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_Z",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_z"
+        },
+        {
+            "text": "x",
+            "key": "Qt.Key_X",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_X",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_x"
+        },
+        {
+            "text": "c",
+            "key": "Qt.Key_C",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_C",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_c"
+        },
+        {
+            "text": "v",
+            "key": "Qt.Key_V",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_V",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_v"
+        },
+        {
+            "text": "b",
+            "key": "Qt.Key_B",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_B",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_b"
+        },
+        {
+            "text": "n",
+            "key": "Qt.Key_N",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_N",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_n"
+        },
+        {
+            "text": "m",
+            "key": "Qt.Key_M",
+            "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_M",
+            "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_m"
+        },
+        { "text": "\u2190", "key": "Qt.Key_Backspace" }
     ],
     "row6": [
-        "123",
-        "Space",
-        "Enter",
-        "Lang"
+        { "text": "123", "key": "Qt.Key_1" },
+        { "text": "Space", "key": "Qt.Key_Space" },
+        { "text": "Enter", "key": "Qt.Key_Return" },
+        { "text": "Lang", "key": "Qt.Key_Language" }
     ]
 }
