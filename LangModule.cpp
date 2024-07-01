@@ -3,42 +3,42 @@
 #include <QJsonDocument>
 #include <QDebug>
 
-VirtualKeyboardPlugin::VirtualKeyboardPlugin(QObject *parent) : QObject(parent)
+LangModule::LangModule(QObject *parent) : QObject(parent)
 {
     loadKeyboardData("english");
 }
 
-QJsonArray VirtualKeyboardPlugin::row1() const
+QJsonArray LangModule::row1() const
 {
     return m_row1;
 }
 
-QJsonArray VirtualKeyboardPlugin::row2() const
+QJsonArray LangModule::row2() const
 {
     return m_row2;
 }
 
-QJsonArray VirtualKeyboardPlugin::row3() const
+QJsonArray LangModule::row3() const
 {
     return m_row3;
 }
 
-QJsonArray VirtualKeyboardPlugin::row4() const
+QJsonArray LangModule::row4() const
 {
     return m_row4;
 }
 
-QJsonArray VirtualKeyboardPlugin::row5() const
+QJsonArray LangModule::row5() const
 {
     return m_row5;
 }
 
-QJsonArray VirtualKeyboardPlugin::row6() const
+QJsonArray LangModule::row6() const
 {
     return m_row6;
 }
 
-void VirtualKeyboardPlugin::loadKeyboardData(const QString &lang)
+void LangModule::loadKeyboardData(const QString &lang)
 {
     QString filePath = QString(":/keyboard_data_%1.json").arg(lang);
 
@@ -54,7 +54,7 @@ void VirtualKeyboardPlugin::loadKeyboardData(const QString &lang)
     parseKeyboardData(data);
 }
 
-void VirtualKeyboardPlugin::parseKeyboardData(const QByteArray &data)
+void LangModule::parseKeyboardData(const QByteArray &data)
 {
     QJsonDocument doc = QJsonDocument::fromJson(data);
     QJsonObject jsonObj = doc.object();

@@ -5,7 +5,7 @@
 #include <QJsonArray>
 #include <QJsonObject>
 
-class VirtualKeyboardPlugin : public QObject
+class LangModule : public QObject
 {
     Q_OBJECT
     Q_PROPERTY(QJsonArray row1 READ row1 NOTIFY dataChanged)
@@ -16,7 +16,7 @@ class VirtualKeyboardPlugin : public QObject
     Q_PROPERTY(QJsonArray row6 READ row6 NOTIFY dataChanged)
 
 public:
-    explicit VirtualKeyboardPlugin(QObject *parent = nullptr);
+    explicit LangModule(QObject *parent = nullptr);
 
     QJsonArray row1() const;
     QJsonArray row2() const;

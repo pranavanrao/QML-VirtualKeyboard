@@ -83,7 +83,7 @@ Rectangle {
                 model: keyboardPlugin.row4
                 delegate: Button {
                     text: modelData.text
-                    onClicked: keyboard.keyPressed(modelData).text
+                    onClicked: keyboard.keyPressed(modelData.text)
                 }
             }
         }

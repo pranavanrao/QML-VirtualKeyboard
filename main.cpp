@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
-    VirtualKeyboardPlugin keyboardPlugin;
+    LangModule keyboardPlugin;
 
     engine.rootContext()->setContextProperty("keyboardPlugin", &keyboardPlugin);
 
