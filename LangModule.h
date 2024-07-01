@@ -1,5 +1,5 @@
-#ifndef VIRTUALKEYBOARDPLUGIN_H
-#define VIRTUALKEYBOARDPLUGIN_H
+#ifndef LANGMODULE_H
+#define LANGMODULE_H
 
 #include <QObject>
 #include <QJsonArray>
@@ -41,4 +41,4 @@ private:
     QJsonArray m_row6;
 };
 
-#endif // VIRTUALKEYBOARDPLUGIN_H
+#endif // LANGMODULE_H

@@ -2,7 +2,7 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
-#include "VirtualKeyboardPlugin.h"
+#include "LangModule.h"
 
 int main(int argc, char *argv[])
 {

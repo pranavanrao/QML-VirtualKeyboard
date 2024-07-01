@@ -1,11 +1,11 @@
-#include "VirtualKeyboardPlugin.h"
+#include "LangModule.h"
 #include <QFile>
 #include <QJsonDocument>
 #include <QDebug>
 
 VirtualKeyboardPlugin::VirtualKeyboardPlugin(QObject *parent) : QObject(parent)
 {
-    loadKeyboardData("english");  // Load the default language on initialization
+    loadKeyboardData("english");
 }
 
 QJsonArray VirtualKeyboardPlugin::row1() const
