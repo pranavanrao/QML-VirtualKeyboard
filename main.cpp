@@ -3,6 +3,7 @@
 #include <QQmlContext>
 
 #include "LangModule.h"
+#include "AllLanguages.h"
 
 int main(int argc, char *argv[])
 {
@@ -13,8 +14,10 @@ int main(int argc, char *argv[])
 
     QQmlApplicationEngine engine;
     LangModule keyboardPlugin;
+    AllLanguages languagePlugin;
 
     engine.rootContext()->setContextProperty("keyboardPlugin", &keyboardPlugin);
+    engine.rootContext()->setContextProperty("languagePlugin", &languagePlugin);
 
     const QUrl url(QStringLiteral("qrc:/main.qml"));
     QObject::connect(

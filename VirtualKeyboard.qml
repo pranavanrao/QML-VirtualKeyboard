@@ -12,6 +12,7 @@ Rectangle {
     signal keyPressed(string key)
 
     Component.onCompleted: {
+        languagePlugin.loadLanguageData("English");
         keyboardPlugin.loadKeyboardData(currentLang);
     }
 
@@ -141,46 +142,7 @@ Rectangle {
         }
     }
 
-    Popup {
+    LanguagePopup {
         id: langPopup
-        width: 200
-        height: 200
-        modal: true
-        focus: true
-
-        Column {
-            spacing: 10
-            padding: 10
-            anchors.centerIn: parent
-
-            Button {
-                text: "English"
-                onClicked: {
-                    keyboard.changeLanguage("english");
-                    langPopup.close();
-                }
-            }
-            Button {
-                text: "Arabic"
-                onClicked: {
-                    keyboard.changeLanguage("arabic");
-                    langPopup.close();
-                }
-            }
-            Button {
-                text: "Japanese"
-                onClicked: {
-                    keyboard.changeLanguage("japanese");
-                    langPopup.close();
-                }
-            }
-            Button {
-                text: "German"
-                onClicked: {
-                    keyboard.changeLanguage("german");
-                    langPopup.close();
-                }
-            }
-        }
     }
 }

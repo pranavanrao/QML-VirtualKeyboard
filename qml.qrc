@@ -2,6 +2,6 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>VirtualKeyboard.qml</file>
-        <file>KeyboardLayout.qml</file>
+        <file>LanguagePopup.qml</file>
     </qresource>
 </RCC>
