@@ -15,7 +15,7 @@ QJsonArray AllLanguages::column() const
 
 void AllLanguages::loadLanguageData(const QString &lang)
 {
-    QString filePath = QString(":/languages_data.json").arg(lang);
+    QString filePath = QString(":/data/languages_data.json").arg(lang);
 
     QFile file(filePath);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {

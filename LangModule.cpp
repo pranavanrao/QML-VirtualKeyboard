@@ -40,7 +40,7 @@ QJsonArray LangModule::row6() const
 
 void LangModule::loadKeyboardData(const QString &lang)
 {
-    QString filePath = QString(":/keyboard_data_%1.json").arg(lang);
+    QString filePath = QString(":/data/keyboard_data_%1.json").arg(lang);
 
     QFile file(filePath);
     if (!file.open(QIODevice::ReadOnly | QIODevice::Text)) {
