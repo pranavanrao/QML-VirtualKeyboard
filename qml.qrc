@@ -1,7 +1,7 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>VirtualKeyboard.qml</file>
-        <file>LanguagePopup.qml</file>
+        <file>ui/LanguagePopup.qml</file>
+        <file>ui/VirtualKeyboard.qml</file>
     </qresource>
 </RCC>

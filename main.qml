@@ -1,6 +1,8 @@
 import QtQuick 2.12
 import QtQuick.Window 2.12
 
+import "./ui/"
+
 Window {
     id: root
     width: 1200
