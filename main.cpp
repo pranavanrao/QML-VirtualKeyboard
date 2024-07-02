@@ -2,8 +2,8 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 
-#include "LangModule.h"
-#include "AllLanguages.h"
+#include "src/LangModule.h"
+#include "src/AllLanguages.h"
 
 int main(int argc, char *argv[])
 {
