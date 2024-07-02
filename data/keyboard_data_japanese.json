@@ -1,41 +1,42 @@
 {
     "row1": [
-        { "text": "あ", "key": "Qt.Key_A", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_あ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_あ" },
-        { "text": "い", "key": "Qt.Key_I", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_い", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_い" },
-        { "text": "う", "key": "Qt.Key_U", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_う", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_う" },
-        { "text": "え", "key": "Qt.Key_E", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_え", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_え" },
-        { "text": "お", "key": "Qt.Key_O", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_お", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_お" }
+        { "text": "あ", "key": "Qt.Key_A", "alternativeUpperCaseKey": "ア", "alternativeLowerCaseKey": "あ" },
+        { "text": "い", "key": "Qt.Key_I", "alternativeUpperCaseKey": "イ", "alternativeLowerCaseKey": "い" },
+        { "text": "う", "key": "Qt.Key_U", "alternativeUpperCaseKey": "ウ", "alternativeLowerCaseKey": "う" },
+        { "text": "え", "key": "Qt.Key_E", "alternativeUpperCaseKey": "エ", "alternativeLowerCaseKey": "え" },
+        { "text": "お", "key": "Qt.Key_O", "alternativeUpperCaseKey": "オ", "alternativeLowerCaseKey": "お" }
     ],
     "row2": [
-        { "text": "か", "key": "Qt.Key_KA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_か", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_か" },
-        { "text": "き", "key": "Qt.Key_KI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_き", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_き" },
-        { "text": "く", "key": "Qt.Key_KU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_く", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_く" },
-        { "text": "け", "key": "Qt.Key_KE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_け", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_け" },
-        { "text": "こ", "key": "Qt.Key_KO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_こ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_こ" }
+        { "text": "か", "key": "Qt.Key_KA", "alternativeUpperCaseKey": "カ", "alternativeLowerCaseKey": "か" },
+        { "text": "き", "key": "Qt.Key_KI", "alternativeUpperCaseKey": "キ", "alternativeLowerCaseKey": "き" },
+        { "text": "く", "key": "Qt.Key_KU", "alternativeUpperCaseKey": "ク", "alternativeLowerCaseKey": "く" },
+        { "text": "け", "key": "Qt.Key_KE", "alternativeUpperCaseKey": "ケ", "alternativeLowerCaseKey": "け" },
+        { "text": "こ", "key": "Qt.Key_KO", "alternativeUpperCaseKey": "コ", "alternativeLowerCaseKey": "こ" }
     ],
     "row3": [
-        { "text": "さ", "key": "Qt.Key_SA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_さ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_さ" },
-        { "text": "し", "key": "Qt.Key_SHI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_し", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_し" },
-        { "text": "す", "key": "Qt.Key_SU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_す", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_す" },
-        { "text": "せ", "key": "Qt.Key_SE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_せ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_せ" },
-        { "text": "そ", "key": "Qt.Key_SO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_そ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_そ" }
+        { "text": "さ", "key": "Qt.Key_SA", "alternativeUpperCaseKey": "サ", "alternativeLowerCaseKey": "さ" },
+        { "text": "し", "key": "Qt.Key_SHI", "alternativeUpperCaseKey": "シ", "alternativeLowerCaseKey": "し" },
+        { "text": "す", "key": "Qt.Key_SU", "alternativeUpperCaseKey": "ス", "alternativeLowerCaseKey": "す" },
+        { "text": "せ", "key": "Qt.Key_SE", "alternativeUpperCaseKey": "セ", "alternativeLowerCaseKey": "せ" },
+        { "text": "そ", "key": "Qt.Key_SO", "alternativeUpperCaseKey": "ソ", "alternativeLowerCaseKey": "そ" }
     ],
     "row4": [
-        { "text": "た", "key": "Qt.Key_TA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_た", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_た" },
-        { "text": "ち", "key": "Qt.Key_CHI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_ち", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_ち" },
-        { "text": "つ", "key": "Qt.Key_TSU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_つ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_つ" },
-        { "text": "て", "key": "Qt.Key_TE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_て", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_て" },
-        { "text": "と", "key": "Qt.Key_TO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_と", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_と" }
+        { "text": "た", "key": "Qt.Key_TA", "alternativeUpperCaseKey": "タ", "alternativeLowerCaseKey": "た" },
+        { "text": "ち", "key": "Qt.Key_CHI", "alternativeUpperCaseKey": "チ", "alternativeLowerCaseKey": "ち" },
+        { "text": "つ", "key": "Qt.Key_TSU", "alternativeUpperCaseKey": "ツ", "alternativeLowerCaseKey": "つ" },
+        { "text": "て", "key": "Qt.Key_TE", "alternativeUpperCaseKey": "テ", "alternativeLowerCaseKey": "て" },
+        { "text": "と", "key": "Qt.Key_TO", "alternativeUpperCaseKey": "ト", "alternativeLowerCaseKey": "と" }
     ],
     "row5": [
-        { "text": "な", "key": "Qt.Key_NA", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_な", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_な" },
-        { "text": "に", "key": "Qt.Key_NI", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_に", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_に" },
-        { "text": "ぬ", "key": "Qt.Key_NU", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_ぬ", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_ぬ" },
-        { "text": "ね", "key": "Qt.Key_NE", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_ね", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_ね" },
-        { "text": "の", "key": "Qt.Key_NO", "alternativeUpperCaseKey": "GlobalRelatedCharacterTable.alternatives_の", "alternativeLowerCaseKey": "GlobalRelatedCharacterTable.alternatives_の" },
+        { "text": "な", "key": "Qt.Key_NA", "alternativeUpperCaseKey": "ナ", "alternativeLowerCaseKey": "な" },
+        { "text": "に", "key": "Qt.Key_NI", "alternativeUpperCaseKey": "ニ", "alternativeLowerCaseKey": "に" },
+        { "text": "ぬ", "key": "Qt.Key_NU", "alternativeUpperCaseKey": "ヌ", "alternativeLowerCaseKey": "ぬ" },
+        { "text": "ね", "key": "Qt.Key_NE", "alternativeUpperCaseKey": "ネ", "alternativeLowerCaseKey": "ね" },
+        { "text": "の", "key": "Qt.Key_NO", "alternativeUpperCaseKey": "ノ", "alternativeLowerCaseKey": "の" },
         { "text": "\u2190", "key": "Qt.Key_Backspace" }
     ],
     "row6": [
+        { "text": "\u2191", "key": "caps_toggle" },
         { "text": "123", "key": "Qt.Key_1" },
         { "text": "Space", "key": "Qt.Key_Space" },
         { "text": "Enter", "key": "Qt.Key_Return" },

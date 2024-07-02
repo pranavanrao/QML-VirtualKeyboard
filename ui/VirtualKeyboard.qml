@@ -11,6 +11,8 @@ Rectangle {
     property string currentLang: "english"
     signal keyPressed(string key)
 
+     property bool capsLockOn: false
+
     Component.onCompleted: {
         languagePlugin.loadLanguageData("English");
         keyboardPlugin.loadKeyboardData(currentLang);
@@ -19,6 +21,11 @@ Rectangle {
     function changeLanguage(lang) {
         currentLang = lang;
         keyboardPlugin.loadKeyboardData(lang);
+    }
+
+    function toggleCapsLock() {
+        capsLockOn = !capsLockOn;
+        console.log("Capslock is clicked. CapsLock state : " + capsLockOn)
     }
 
     ColumnLayout {
@@ -67,8 +74,8 @@ Rectangle {
                 id: buttonRepeater3
                 model: keyboardPlugin.row3
                 delegate: Button {
-                    text: modelData.text
-                    onClicked: keyboard.keyPressed(modelData.text)
+                    text: capsLockOn ? modelData.alternativeUpperCaseKey : modelData.text
+                    onClicked: keyboard.keyPressed(text)
                 }
             }
         }
@@ -83,8 +90,8 @@ Rectangle {
                 id: buttonRepeater4
                 model: keyboardPlugin.row4
                 delegate: Button {
-                    text: modelData.text
-                    onClicked: keyboard.keyPressed(modelData.text)
+                    text: capsLockOn ? modelData.alternativeUpperCaseKey : modelData.text
+                    onClicked: keyboard.keyPressed(text)
                 }
             }
         }
@@ -99,14 +106,14 @@ Rectangle {
                 id: buttonRepeater5
                 model: keyboardPlugin.row5
                 delegate: Button {
-                    text: modelData.text
+                    text: capsLockOn ? modelData.alternativeUpperCaseKey : modelData.text
                     onClicked: {
                         if (text === "\u2190") {
                             if (inputField.text.length > 0) {
                                 inputField.text = inputField.text.substring(0, inputField.text.length - 1);
                             }
                         } else {
-                            keyboard.keyPressed(modelData.text);
+                            keyboard.keyPressed(text);
                         }
                     }
                 }
@@ -127,6 +134,8 @@ Rectangle {
                     onClicked: {
                         if (text === "123") {
                             console.log("123 clicked");
+                        } else if(text === "\u2191") {
+                            toggleCapsLock();
                         } else if (text === "Space") {
                             keyboard.keyPressed(" ");
                         } else if (text === "Enter") {
